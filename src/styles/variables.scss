@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&family=Ysabeau:ital,wght@0,100;0,300;0,900;1,500&display=swap');
+
+@mixin font-family($payload) {
+    font-family: 'Ysabeau', sans-serif;
+    @if ($payload == 'heading') {
+        font-weight: 900;
+    } @else if ($payload == 'paragraph') {
+        font-weight: 100;
+    } @else {
+        font-weight: 300;
+    }
+}
+
+$primary-color: #F45050;
+$secondary-color: #F9D949;
+$text-black: #3C486B;
+$text-white: #f5f5f5
+
+
