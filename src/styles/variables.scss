@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&family=Ysabeau:ital,wght@0,100;0,300;0,900;1,500&display=swap');
 
-@mixin font-family($payload) {
-    font-family: 'Ysabeau', sans-serif;
+@mixin font-family($payload, $font-family: 'Poppins') {
+    font-family: $font-family, sans-serif;
     @if ($payload == 'heading') {
         font-weight: 900;
     } @else if ($payload == 'paragraph') {
